@@ -1,9 +1,24 @@
 footer.footer {
-    background: linear-gradient(180deg, rgba(0, 45, 42, 0.95) 0%, #002D2A 100%);
+    position: relative;
+
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 45, 42, 0.95) 0%, #002D2A 100%);
+        z-index: 1;
+    }
 }
 
 .footer__topsection {
     padding: 100px 0;
+    position: relative;
+    z-index: 2;
 
     .texth2 {
         color: #fff;
@@ -43,7 +58,10 @@ footer.footer {
 .footer__content {
     border-top: 1px solid rgba(#fff, 0.2);
     padding: 90px 0 74px;
+    position: relative;
+    z-index: 2;
 }
+
 
 .footer__logobox {
     max-width: 200px;
@@ -189,4 +207,218 @@ footer.footer .footer__title {
     font-weight: 500;
     line-height: 110%;
     color: rgba(#fff, 0.5);
+}
+
+.footer-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.bottprivacytext {
+    display: none;
+}
+
+@media(max-width:1499.8px) {
+    .footer-book .tel {
+        font-size: 20px;
+    }
+
+    .footer-book .email,
+    .footer-loc p {
+        font-size: 16px;
+    }
+
+    .footer-loc,
+    .footer-book {
+        margin-right: 90px;
+    }
+}
+
+@media(max-width:1399.8px) {
+
+    .footer__topsection {
+        padding: 60px 0;
+    }
+
+    .footer__content {
+        padding: 60px 0;
+    }
+
+    .footer-book,
+    .footer-loc {
+        margin-right: 50px;
+    }
+
+    .footer__logobox a,
+    footer.footer .footer__title {
+        margin-bottom: 20px;
+    }
+
+    .footer-nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .footer-book {
+        max-width: 220px;
+    }
+
+    .footer-loc {
+        max-width: 240px;
+    }
+
+    .footer__logobox img {
+        max-width: 160px;
+    }
+
+
+    .footer-book .tel {
+        font-size: 18px;
+    }
+
+    .footer-book .email,
+    .footer-loc p {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .footer__logobox {
+        margin: 0 auto 30px;
+
+        p {
+            display: none;
+        }
+
+        a {
+            margin-bottom: 0;
+        }
+    }
+
+    .footer-rsect {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__topsection a {
+        height: 56px;
+        width: 240px;
+    }
+
+    .footer__content {
+        padding-top: 40px;
+        padding-bottom: 25px;
+    }
+
+
+
+    .bottprivacytext {
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 120%;
+        color: rgba(255, 255, 255, 0.5);
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+
+
+
+
+
+}
+
+@media(max-width:991.8px) {
+    .footer__topsection .texth2 {
+        margin-bottom: 20px;
+    }
+
+    .footer-book .email {
+        margin-bottom: 30px;
+    }
+
+    .footer-book,
+    .footer-loc {
+        margin-right: 0;
+    }
+
+    .footer-nav {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 30px;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            li {
+                width: 100%;
+                max-width: 50%;
+                flex: 0 0 50%;
+                padding-right: 10px;
+            }
+        }
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .footer__topsection {
+        padding: 40px 0;
+    }
+}
+
+@media(max-width:575.8px) {
+    .footer__topsection .texth2 {
+        text-align: center;
+    }
+
+    .footer-rsect {
+        display: block;
+    }
+
+    .footer-book {
+        max-width: 100%;
+        margin-bottom: 30px;
+
+        .tel,
+        .email {
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-loc {
+        max-width: 100%;
+    }
+
+    .footer-book .soclist {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .footer-loc {
+        margin-bottom: 30px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+
+    .footer-nav ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+
+
 }

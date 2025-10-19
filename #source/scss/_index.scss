@@ -38,7 +38,7 @@
 .hero-text {
     max-width: 548px;
     margin: -100px auto 0;
-    transform: translateX(-70px);
+    // transform: translateX(-70px);
 
     .subtitle {
         color: rgba(#fff, 0.8);
@@ -50,9 +50,13 @@
     }
 
     h1 {
+        font-family: "Prompt", sans-serif;
+        font-size: 130px;
+        line-height: 110%;
         text-transform: uppercase;
         letter-spacing: 25px;
         margin-bottom: 25px;
+        font-weight: 400;
     }
 
     p {
@@ -141,7 +145,7 @@
             display: inline-block;
             width: 1px;
             height: 25px;
-            background: #fff;
+            background: #D3D3D3;
             position: absolute;
             right: 50%;
             top: 50%;
@@ -174,9 +178,6 @@
     }
 }
 
-.half-container {
-    padding-left: calc((100vw - 1425px) / 2);
-}
 
 .promotion-item {
     .imgwrap {
@@ -644,8 +645,570 @@
 
 @media(max-width:1499.8px) {
     .hero-text {
-        transform: translateX(-40px);
+        transform: none;
     }
 
+    .hero-text {
+        h1 {
+            font-size: 100px;
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+
+    .fastbook-form .inputs-wrap {
+        max-width: calc(100% - 250px);
+        flex: 0 0 calc(100% - 250px);
+    }
+
+    .fastbook-form .inputs-wrap input {
+        width: calc(50% - 35px);
+    }
+
+    .promotion-item .imgwrap,
+    .promotion__description {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .promotion__description .date {
+        margin-bottom: 5px;
+    }
+
+    .services-wrap .services__left h2 {
+        margin-bottom: 50px;
+    }
+
+    .tabbtns-list li {
+        margin-bottom: 15px;
+    }
+
+    .tabbtns-list {
+        margin-bottom: 60px;
+    }
+
+    .tab-imgwrapper {
+        height: 700px;
+    }
+
+    .tab-itempic .imgwrap-small {
+        width: 220px;
+        height: 250px;
+        transform: translateX(-35%);
+    }
+
+    .roomslide__header .title {
+        margin-bottom: 20px;
+    }
+
+    .roomslide__img {
+        height: 450px;
+    }
+
+    .faq-item {
+        padding: 25px 0;
+    }
+
+    .faq-item__body {
+        padding-top: 20px;
+    }
+
+
+
+
+    .promotions-events {
+        padding: 70px 0;
+    }
+
+    .location {
+        padding: 90px 0 0 0;
+    }
+
+    .services,
+    .roomssection,
+    .faq {
+        padding: 90px 0;
+    }
+
+    .promotions-events h3 {
+        margin-bottom: 40px;
+    }
+
+    .roomssection__header {
+        margin-bottom: 70px;
+    }
+
+    .roomslide__header .title {
+        font-size: 30px;
+    }
+
+    .faq-item__header p {
+        font-size: 21px;
+    }
+
+    .promotion__description .title,
+    .tabbtns-list span {
+        font-size: 20px;
+    }
+
+    .fastbook-descr p,
+    .tab-item p,
+    .roomslide__header p,
+    .location__header .locdescr p {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .fastbook {
+        width: 100%;
+    }
+
+    .fastbook-wrapper {
+        bottom: 40px;
+    }
+
+    .tabbtns-list li {
+        margin-bottom: 10px;
+    }
+
+    .services-wrap .services__right,
+    .services-wrap .services__left {
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+
+    .tab-itempic .imgwrap-small {
+        width: 180px;
+        height: 200px;
+        transform: translateX(-25%);
+        bottom: 240px;
+    }
+
+    .tab-imgwrapper {
+        height: 600px;
+    }
+
+
+
+
+    .promotions-events h3 {
+        margin-bottom: 30px;
+    }
+
+    .services-wrap .services__left h2 {
+        margin-bottom: 40px;
+    }
+
+    .tabbtns-list span {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .hero-text h1 {
+        margin-bottom: 0;
+    }
+
+    .services-wrap .services__left {
+        padding-right: 30px;
+    }
+
+    .left-tebsection {
+        padding-left: 0;
+    }
+
+    .tab-item {
+        max-width: 410px;
+        padding-left: 40px;
+    }
+
+    .count-element {
+        font-size: 28px;
+    }
+
+    .tabbtns-list {
+        margin-bottom: 40px;
+    }
+
+    .tab-item p {
+        margin-bottom: 30px;
+    }
+
+    .tab-imgwrapper {
+        height: 550px;
+    }
+
+    .slarr {
+        margin-left: 70px;
+    }
+
+    .roomslide__header .title {
+        font-size: 24px;
+    }
+
+    .roomslide__header .price {
+        font-size: 16px;
+    }
+
+    .roomslide__header ul li {
+        margin-left: 10px;
+
+        img {
+            width: 30px;
+        }
+    }
+
+
+    .faq,
+    .roomssection,
+    .services {
+        padding: 70px 0;
+    }
+
+    .faq-item__header p {
+        font-size: 18px;
+    }
+
+}
+
+@media(max-width:991.8px) {
+    .fastbook {
+        border-radius: 16px;
+        padding: 16px;
+    }
+
+    .fastbook-descr {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0;
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .fastbook-form {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .fastbook-form .inputs-wrap input {
+        width: calc(50% - 25px);
+    }
+
+    .services-wrap .services__left,
+    .services-wrap .services__right {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .tab-itempic .imgwrap-small {
+        display: none;
+    }
+
+    .services {
+        .half-container {
+            padding-right: calc((100vw - 695px) / 2);
+        }
+    }
+
+    .tab-item,
+    .tabbtns-list {
+        max-width: 100%;
+    }
+
+    .tabbtns-list {
+        margin-bottom: 30px;
+    }
+
+    .tab-item {
+        margin-bottom: 20px;
+
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .tab-imgwrapper {
+        height: auto;
+    }
+
+    .tab-itempic {
+        position: relative;
+        display: none;
+
+        &.active {
+            display: block;
+        }
+    }
+
+    .tab-itempic .imgwrap-large {
+        height: auto;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .roomslide__img {
+        height: 360px;
+    }
+
+
+
+
+
+
+    .roomssection h2,
+    .location h2 {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+
+    .hero-text {
+        .subtitle {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 70px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .fastbook-form {
+        margin-top: 10px;
+
+        .inputs-wrap {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 20px;
+        }
+
+        .fastbook__submit {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .inputs-wrap:after {
+            opacity: 0.5;
+        }
+    }
+
+    .fastbook-descr p {
+        text-align: center;
+    }
+
+    .services .half-container {
+        padding-right: calc((100vw - 515px) / 2);
+    }
+
+    .services-wrap .services__left {
+        padding-right: 0;
+    }
+
+    .roomslide__img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .roomslide__header .roomslide__info {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-top: 10px;
+
+        p,
+        ul {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+        }
+
+        p {
+            text-align: left;
+            margin: 0;
+        }
+    }
+
+    .roomslide__header .title {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .roomssection__header {
+        margin-bottom: 40px;
+    }
+
+    .location {
+        padding-top: 60px;
+    }
+
+    .faq h3 {
+        margin-bottom: 30px;
+    }
+
+    .faq-item__header p {
+        font-size: 16px;
+    }
+
+    .faq-item__header .faq-arrow {
+        width: 24px;
+    }
+
+    .faq-item {
+        padding: 20px 0;
+    }
+
+
+
+    .promotions-events,
+    .faq,
+    .roomssection,
+    .services {
+        padding: 60px 0;
+    }
+}
+
+@media(max-width:575.8px) {
+
+    .hero-text h1 {
+        font-size: 50px;
+        letter-spacing: 15px;
+    }
+
+    .fastbook-form .inputs-wrap:after {
+        display: none;
+    }
+
+    .fastbook-form .inputs-wrap {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+
+        input {
+            max-width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .fastbook-wrapper {
+        bottom: 20px;
+    }
+
+    .herosection {
+        padding: 60px 0 100px;
+    }
+
+    .fastbook-form {
+        margin-top: 5px;
+    }
+
+    .promotion-item .imgwrap,
+    .promotion__description {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .promotion-item .imgwrap {
+        margin-bottom: 15px;
+    }
+
+    .promotion__description {
+        padding-left: 0;
+    }
+
+    .services .half-container {
+        padding-right: var(--bs-gutter-x, .75rem);
+    }
+
+    .tab-itempic .imgwrap-large {
+        aspect-ratio: 16 / 10;
+    }
+
+    .count-element {
+        font-size: 20px;
+        top: 1px;
+    }
+
+    .tab-item {
+        padding-left: 30px;
+    }
+
+    .sectnav .linkarr {
+        padding-right: 40px;
+    }
+
+    .slarr {
+        margin-left: 20px;
+    }
+
+    .slarr .swiper-pagination {
+        font-size: 21px;
+    }
+
+    .faq-item__header p {
+        position: relative;
+        padding-left: 25px;
+        padding-right: 30px;
+
+        span {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+
+    .faq-item__body {
+        padding: 20px 0 0 0;
+        font-size: 15px;
+    }
+
+
+
+    .promotions-events h3,
+    .services-wrap .services__left h2,
+    .location h2,
+    .roomssection h2 {
+        margin-bottom: 20px;
+    }
+
+    .faq,
+    .promotions-events,
+    .roomssection,
+    .services {
+        padding: 50px 0;
+    }
+
+    .location {
+        padding-top: 50px;
+    }
+
+    .tab-item p {
+        margin-bottom: 10px;
+    }
+
+    .hero-text .subtitle {
+        font-size: 18px;
+    }
+
+    .hero-text p {
+        font-size: 15px;
+    }
 
 }

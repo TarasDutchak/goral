@@ -52,11 +52,11 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    font-family: "Prompt", sans-serif;
-    font-size: 130px;
-    line-height: 110%;
-}
+// h1 {
+//     font-family: "Prompt", sans-serif;
+//     font-size: 130px;
+//     line-height: 110%;
+// }
 
 h2,
 .texth2 {
@@ -162,5 +162,124 @@ h3 {
             }
         }
     }
+
+}
+
+
+.half-container {
+    padding-left: calc((100vw - 1425px) / 2);
+}
+
+
+
+
+
+@media(max-width:1499.8px) {
+    .half-container {
+        padding-left: calc((100vw - 1295px) / 2);
+    }
+
+    h2,
+    .texth2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .half-container {
+        padding-left: calc((100vw - 1115px) / 2);
+    }
+
+    h2,
+    .texth2 {
+        font-size: 42px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:1199.8px) {
+    .half-container {
+        padding-left: calc((100vw - 935px) / 2);
+    }
+
+    h2,
+    .texth2 {
+        font-size: 36px;
+
+        span {
+            margin-left: 40px;
+        }
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width:991.8px) {
+    .half-container {
+        padding-left: calc((100vw - 695px) / 2);
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+
+    .half-container {
+        padding-left: calc((100vw - 515px) / 2);
+    }
+
+    .yellowbtn {
+        background-image: none;
+    }
+
+
+
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .texth2,
+    h2 {
+        font-size: 32px;
+    }
+
+
+}
+
+@media(max-width:575.8px) {
+
+    .half-container {
+        padding-right: var(--bs-gutter-x, .75rem);
+        padding-left: var(--bs-gutter-x, .75rem);
+    }
+
+
+
+
+
+
+    // h3 {
+    //     font-size: 24px;
+    // }
+
+    .texth2,
+    h2 {
+        font-size: 28px;
+
+        span {
+            margin-left: 0;
+        }
+    }
+
 
 }

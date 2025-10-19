@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     // Акції і події - слайдер
     var swiper = new Swiper(".halfslider", {
-        slidesPerView: 2.1,
+        slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
         speed: 700,
@@ -27,10 +27,32 @@ $(document).ready(function () {
             el: ".swiper-pagination",
             clickable: true,
         },
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            575: {
+                slidesPerView: 1.1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 1.4,
+                spaceBetween: 20,
+            },
+            991: {
+                slidesPerView: 1.8,
+                spaceBetween: 20,
+            },
+            1199: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+            },
+            1399: {
+                slidesPerView: 2.1,
+                spaceBetween: 20,
+            },
+        },
     });
 
 
@@ -49,7 +71,7 @@ $(document).ready(function () {
 
 
     var swiper = new Swiper(".roomsslider", {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
         spaceBetween: 70,
         loop: true,
         speed: 700,
@@ -72,6 +94,20 @@ $(document).ready(function () {
                 return formatted;
             },
         },
+        breakpoints: {
+            575: {
+                slidesPerView: 1.2,
+                spaceBetween: 30,
+            },
+            768: {
+                slidesPerView: 1.2,
+                spaceBetween: 30,
+            },
+            1200: {
+                slidesPerView: 1.5,
+                spaceBetween: 70,
+            },
+        },
     });
 
     // faq
@@ -79,9 +115,9 @@ $(document).ready(function () {
         $('.faq-item__body').not($(this).next('.faq-item__body')).slideUp();
         $(this).next('.faq-item__body').slideToggle();
 
-         $('.faq-item__header').not($(this)).removeClass('active');
+        $('.faq-item__header').not($(this)).removeClass('active');
         $(this).toggleClass('active');
-        
+
     });
 
 
