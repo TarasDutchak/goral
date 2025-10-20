@@ -494,6 +494,10 @@
             margin-right: 11px;
             opacity: 0.45;
         }
+
+        a {
+            color: $dark-green;
+        }
     }
 
     p {
@@ -640,6 +644,12 @@
 
     p {
         margin: 0;
+    }
+}
+
+.promotions-events {
+    .slarr {
+        display: none;
     }
 }
 
@@ -1179,6 +1189,32 @@
         font-size: 15px;
     }
 
+    .promotions-events {
+        .container {
+            position: relative;
+        }
+
+        .slarr {
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            top: -10px;
+            display: flex;
+            align-items: center;
+            width: 90px;
+
+            .swiper-button-next,
+            .swiper-button-prev {
+                max-width: 36px;
+                flex: 0 0 36px;
+                height: 36px;
+            }
+        }
+    }
+
+     .promotions-events h3 {
+        padding-right: 100px;
+     }
 
 
     .promotions-events h3,

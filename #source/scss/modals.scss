@@ -231,8 +231,9 @@
         font-size: 26px;
     }
 
-    .largemodal__leftsect {
-        padding: 50px 30px;
+    .largemodal__leftsect,
+    .largemodal__leftsect.formsect {
+        padding: 60px 30px 50px;
     }
 
 

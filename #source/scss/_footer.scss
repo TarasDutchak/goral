@@ -419,6 +419,21 @@ footer.footer .footer__title {
         flex: 0 0 100%;
     }
 
+    .footer-nav {
+        display: none;
+    }
+
+    .footer-book {
+        text-align: center;
+    }
+
+    .footer-book .soclist {
+        justify-content: center;
+    }
+
+    .footer-loc {
+        text-align: center;
+    }
 
 
 }

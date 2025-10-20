@@ -23,9 +23,9 @@ $(document).ready(function () {
         spaceBetween: 20,
         loop: true,
         speed: 700,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
+         navigation: {
+            nextEl: ".swiper-button-next.v2",
+            prevEl: ".swiper-button-prev.v2",
         },
         autoplay: {
             delay: 5000,
