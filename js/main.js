@@ -120,7 +120,19 @@ $(document).ready(function () {
 
     });
 
+    // menu
+    $('.burger-btn').click(function () {
+        $('body').addClass('hidden');
+        $('.header__left').addClass('open');
+        $('.menu-overlay').addClass('show');
 
+    });
+
+    $('.closemenu, .menu-overlay').click(function () {
+        $('body').removeClass('hidden');
+        $('.header__left').removeClass('open');
+        $('.menu-overlay').removeClass('show');
+    });
 
 
 

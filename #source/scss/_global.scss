@@ -96,9 +96,11 @@ h3 {
 // ----------btns----------
 .yellowbtn {
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
-    min-height: 48px;
+    min-height: 53px;
     padding: 12px 21px;
     border-radius: 30px;
     background-color: $gold;

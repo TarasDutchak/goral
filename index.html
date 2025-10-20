@@ -15,7 +15,7 @@
 
 <body>
     <div class="pagewrapper">
-        <!-- <header class="header">
+        <header class="header">
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center">
                     <div class="header__left">
@@ -24,11 +24,14 @@
                             <li><a href="#">Номери</a></li>
                             <li><a href="#">Ресторан</a></li>
                             <li><a href="#">SPA</a></li>
-                        </ul>
-                        <ul class="d-none list-unstyled header__nav">
                             <li><a href="#">Послуги</a></li>
+                        </ul>
+                        <ul class="d-xl-none list-unstyled header__nav">
                             <li><a href="#">Контакти</a></li>
                         </ul>
+                        <button class="closemenu">
+                            <img src="img/general/close.png" alt="close">
+                        </button>
                     </div>
                     <div class="header__logo text-center">
                         <a href="#">
@@ -37,19 +40,27 @@
                     </div>
                     <div class="header__right">
                         <ul class="list-unstyled header__nav">
-                            <li><a href="#">Послуги</a></li>
                             <li><a href="#">Контакти</a></li>
                         </ul>
                         <div class="language-box d-inline-block">
-                            <a href="#">EN</a>
+                            <ul>
+                                <li class="active"><a href="#">UA</a></li>
+                                <li><a href="#">EN</a></li>
+                            </ul>
                         </div>
                         <a href="#" class="yellowbtn">
-                            38 (067) 888 58 78
+                            <span>38 (067) 888 58 78</span>
+                            <img src="img/general/phone-call.png" alt="tel">
                         </a>
+                        <button class="burger-btn">
+                            <img src="img/general/menu.png" alt="img">
+                        </button>
+
                     </div>
                 </div>
             </div>
-        </header> -->
+            <div class="menu-overlay"></div>
+        </header>
 
         <main class="main">
             <section class="herosection">
@@ -108,7 +119,8 @@
                                                 Незабутній відпочинок серед Карпатської природи та вишуканого сервісу
                                             </p>
                                         </div>
-                                        <a href="#" class="linkarr">
+                                        <a href="#" class="linkarr" data-bs-toggle="modal"
+                                            data-bs-target="#pomotionmodal">
                                             <span>Дізнатись більше</span>
                                             <img src="img/general/arrow-link.svg" alt="icon">
                                         </a>
@@ -131,7 +143,8 @@
                                                 Незабутній відпочинок серед Карпатської природи та вишуканого сервісу
                                             </p>
                                         </div>
-                                        <a href="#" class="linkarr">
+                                        <a href="#" class="linkarr" data-bs-toggle="modal"
+                                            data-bs-target="#pomotionmodal">
                                             <span>Дізнатись більше</span>
                                             <img src="img/general/arrow-link.svg" alt="icon">
                                         </a>
@@ -154,7 +167,8 @@
                                                 Незабутній відпочинок серед Карпатської природи та вишуканого сервісу
                                             </p>
                                         </div>
-                                        <a href="#" class="linkarr">
+                                        <a href="#" class="linkarr" data-bs-toggle="modal"
+                                            data-bs-target="#pomotionmodal">
                                             <span>Дізнатись більше</span>
                                             <img src="img/general/arrow-link.svg" alt="icon">
                                         </a>
@@ -177,7 +191,8 @@
                                                 Незабутній відпочинок серед Карпатської природи та вишуканого сервісу
                                             </p>
                                         </div>
-                                        <a href="#" class="linkarr">
+                                        <a href="#" class="linkarr" data-bs-toggle="modal"
+                                            data-bs-target="#pomotionmodal">
                                             <span>Дізнатись більше</span>
                                             <img src="img/general/arrow-link.svg" alt="icon">
                                         </a>
@@ -336,7 +351,8 @@
                                 </h2>
                             </div>
                             <div class="col-lg-6">
-                                <div class="sectnav d-flex align-items-center justify-content-lg-end justify-content-between">
+                                <div
+                                    class="sectnav d-flex align-items-center justify-content-lg-end justify-content-between">
                                     <a href="#" class="linkarr">
                                         <span>Всі номери</span>
                                         <img src="img/general/arrow-link.svg" alt="icon">
@@ -643,7 +659,7 @@
                             </p>
                         </div>
                         <div class="col-xl-3 col-lg-4 text-lg-end text-center">
-                            <a href="#">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#fastbook">
                                 Забронювати
                             </a>
                         </div>
@@ -714,8 +730,72 @@
             <img class="footer-bg" src="img/general/foter-bg.jpg" alt="img">
         </footer>
 
-    </div>
 
+        <div class="modal fade largemodal" id="pomotionmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button class="closemodal" data-bs-dismiss="modal">
+                        <img src="img/general/close-modal.svg" alt="close">
+                    </button>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="largemodal__leftsect text-center">
+                            <p class="title">Пропозиція Місяця</p>
+                            <p class="yellowtext">Пропозиція діє з 12.10-11.11</p>
+                            <p>
+                                Забронюйте номер цього місяця та отримайте подарунок – <span>набір для вечора з
+                                    закусками
+                                    та напоями!</span> Ідеальний спосіб розслабитися після насиченого дня: легкі снеки,
+                                освіжаючі напої та приємна атмосфера у вашому номері.
+                            </p>
+                            <a href="#" class="yellowbtn">
+                                Детальніше
+                            </a>
+                        </div>
+                        <div class="largemodal__rightsect">
+                            <img src="img/general/modalpic2.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade largemodal" id="fastbook" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <button class="closemodal" data-bs-dismiss="modal">
+                        <img src="img/general/close-modal.svg" alt="close">
+                    </button>
+
+                    <div class="d-flex flex-wrap">
+                        <div class="largemodal__leftsect formsect text-center">
+                            <p class="title">Швидке бронювання</p>
+                            <p>
+                                Заповніть форму і наш менеджер зв’яжеться з Вами для уточнення деталей
+                            </p>
+                            <form action="#">
+                                <div class="inputfield">
+                                    <input type="text" placeholder="Ваше ім'я">
+                                </div>
+                                <div class="inputfield">
+                                    <input class="telinput" type="text" placeholder="Номер телефону">
+                                </div>
+                                <button type="submit" class="yellowbtn">
+                                    Забронювати
+                                </button>
+                            </form>
+                        </div>
+                        <div class="largemodal__rightsect">
+                            <img src="img/general/modalpic1.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <script src="js/lib/jquery.js"></script>
     <script src="js/lib/bootstrap.min.js"></script>

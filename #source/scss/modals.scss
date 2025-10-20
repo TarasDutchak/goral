@@ -1,0 +1,240 @@
+.largemodal {
+    .modal-dialog {
+        max-width: 1018px;
+    }
+
+    .modal-content {
+        border: none;
+        border-radius: 0;
+    }
+}
+
+.largemodal__leftsect {
+    width: 100%;
+    max-width: 52%;
+    flex: 0 0 52%;
+    padding: 120px 59px 50px;
+    min-height: 750px;
+
+    p {
+        margin-bottom: 25px;
+        font-size: 17px;
+        color: $dark-green;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    .yellowtext {
+        color: $gold;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .title {
+        font-family: "Tenor Sans", sans-serif;
+        text-transform: uppercase;
+        font-size: 45px;
+        line-height: 110%;
+    }
+
+    .yellowbtn {
+        margin-top: 79px;
+        min-height: 65px;
+        width: 290px;
+        border-radius: 50px;
+        font-size: 17px;
+
+        &:hover {
+            background-position: center bottom -45px;
+        }
+    }
+}
+
+.largemodal__rightsect {
+    width: 100%;
+    max-width: 48%;
+    flex: 0 0 48%;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.closemodal {
+    padding: 0;
+    background: transparent;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: $gold;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 2;
+    transition: 0.3s;
+
+    img {
+        max-width: 19px;
+    }
+
+    &:hover {
+        background-color: #B58E42;
+    }
+
+}
+
+.largemodal__leftsect.formsect {
+    .title {
+        margin-bottom: 35px;
+    }
+
+    .inputfield {
+        margin-bottom: 35px;
+
+        input {
+            width: 100%;
+            height: 55px;
+            border: none;
+            border-bottom: 1px solid #595E49;
+            transition: 0.3s;
+
+            &:focus {
+                border-color: $gold;
+            }
+        }
+    }
+
+    .yellowbtn {
+        margin-top: 45px;
+        border: none;
+    }
+}
+
+@media(max-width:1599.8px) {
+
+    .largemodal__leftsect {
+        min-height: 600px;
+        padding: 90px 50px 50px;
+
+        .title {
+            font-size: 36px;
+        }
+
+        .yellowbtn {
+            margin-top: 30px;
+        }
+    }
+
+    .largemodal .modal-dialog {
+        max-width: 800px;
+    }
+
+    .largemodal__leftsect.formsect {
+        padding-top: 60px;
+    }
+
+    .largemodal__leftsect.formsect .inputfield {
+        margin-bottom: 25px;
+    }
+
+    .largemodal__leftsect.formsect .title {
+        margin-bottom: 30px;
+    }
+
+    .largemodal__leftsect.formsect .yellowbtn {
+        margin-top: 25px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+
+    .largemodal .modal-dialog {
+        max-width: 700px;
+    }
+
+    .largemodal__leftsect {
+        min-height: 500px;
+        padding: 50px 40px 40px 40px;
+    }
+
+    .largemodal__leftsect {
+        p {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        .title {
+            font-size: 30px;
+        }
+
+        .yellowtext {
+            font-size: 16px;
+        }
+
+        .yellowbtn {
+            margin-top: 20px;
+            min-height: 50px;
+            width: 220px;
+        }
+
+    }
+
+    .largemodal__leftsect.formsect {
+        padding-top: 50px;
+    }
+
+    .largemodal__leftsect.formsect .title {
+        margin-bottom: 15px;
+    }
+
+}
+
+@media(max-width:767.8px) {
+    .largemodal .modal-dialog {
+        max-width: 500px;
+    }
+
+    .largemodal__rightsect {
+        display: none;
+    }
+
+    .largemodal__leftsect {
+        max-width: 100%;
+        flex: 0 0 100%;
+        min-height: initial;
+    }
+
+    .closemodal {
+        right: 20px;
+        top: 20px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .largemodal .modal-dialog {
+        max-width: 100%;
+    }
+
+    .largemodal__leftsect .title {
+        font-size: 26px;
+    }
+
+    .largemodal__leftsect {
+        padding: 50px 30px;
+    }
+
+
+
+}
