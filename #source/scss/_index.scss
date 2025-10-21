@@ -493,10 +493,12 @@
             font-family: "Tenor Sans", sans-serif;
             margin-right: 11px;
             opacity: 0.45;
+            transition: 0.3s;
         }
 
         a {
             color: $dark-green;
+            transition: 0.3s;
         }
     }
 
