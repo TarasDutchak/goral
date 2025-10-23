@@ -282,15 +282,18 @@ header.header.header_white {
     }
 
     header.header.header_white {
+
         .burger-btn,
         .closemenu {
             filter: brightness(0);
         }
+
+        .header__left {
+            background: #fff;
+        }
     }
 
-    .header__left {
-        background: #fff;
-    }
+
 
 
 

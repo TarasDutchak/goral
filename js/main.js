@@ -23,7 +23,7 @@ $(document).ready(function () {
         spaceBetween: 20,
         loop: true,
         speed: 700,
-         navigation: {
+        navigation: {
             nextEl: ".swiper-button-next.v2",
             prevEl: ".swiper-button-prev.v2",
         },
@@ -68,8 +68,6 @@ $(document).ready(function () {
 
 
     //   rooms slider
-
-
     var swiper = new Swiper(".roomsslider", {
         slidesPerView: 1,
         spaceBetween: 70,
@@ -133,6 +131,59 @@ $(document).ready(function () {
         $('.header__left').removeClass('open');
         $('.menu-overlay').removeClass('show');
     });
+
+    // fancybox
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+    });
+
+    // gallery slider
+
+    var swiper = new Swiper(".gallery-slider", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        speed: 700,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+
+        navigation: {
+            nextEl: ".swiper-button-next.v3",
+            prevEl: ".swiper-button-prev.v3",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "custom",
+            renderCustom: function (swiper, current, total) {
+                // додаємо 0 перед однозначними числами
+                const formatted = current < 10 ? `0${current}` : current;
+                return formatted;
+            },
+        },
+        breakpoints: {
+            575: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
+            768: {
+                slidesPerView: 1.2,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 45,
+            },
+        },
+    });
+
+
+
 
 
 

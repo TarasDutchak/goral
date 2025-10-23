@@ -29,7 +29,7 @@ body {
         overflow: hidden;
     }
 
-    &* {
+    & * {
         line-height: 150%;
     }
 }
@@ -130,6 +130,27 @@ h3 {
     }
 }
 
+.opacitybtn {
+    background: rgba(#D0A659, 0.5);
+    border: 1px solid #C9A86C;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65px;
+    padding: 5px 30px;
+    border-radius: 50px;
+    min-width: 220px;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: #B58E42;
+        color: #fff;
+    }
+}
+
 .linkarr {
     color: $gold;
     font-weight: 500;
@@ -179,9 +200,13 @@ h3 {
 
 }
 
-
 .half-container {
     padding-left: calc((100vw - 1425px) / 2);
+
+    &.reverse {
+        padding-left: 0;
+        padding-right: calc((100vw - 1425px) / 2);
+    }
 }
 
 
@@ -191,6 +216,10 @@ h3 {
 @media(max-width:1499.8px) {
     .half-container {
         padding-left: calc((100vw - 1295px) / 2);
+
+        &.reverse {
+            padding-right: calc((100vw - 1295px) / 2);
+        }
     }
 
     h2,
@@ -206,6 +235,10 @@ h3 {
 @media(max-width:1399.8px) {
     .half-container {
         padding-left: calc((100vw - 1115px) / 2);
+
+        &.reverse {
+            padding-right: calc((100vw - 1115px) / 2);
+        }
     }
 
     h1 {
@@ -225,6 +258,10 @@ h3 {
 @media(max-width:1199.8px) {
     .half-container {
         padding-left: calc((100vw - 935px) / 2);
+
+        &.reverse {
+            padding-right: calc((100vw - 935px) / 2);
+        }
     }
 
     h1 {
@@ -252,6 +289,10 @@ h3 {
 @media(max-width:991.8px) {
     .half-container {
         padding-left: calc((100vw - 695px) / 2);
+
+        &.reverse {
+            padding-right: calc((100vw - 695px) / 2);
+        }
     }
 
 
@@ -261,6 +302,10 @@ h3 {
 
     .half-container {
         padding-left: calc((100vw - 515px) / 2);
+
+        &.reverse {
+            padding-right: calc((100vw - 515px) / 2);
+        }
     }
 
     .yellowbtn {
@@ -287,10 +332,14 @@ h3 {
 @media(max-width:575.8px) {
 
     .half-container {
-        padding-right: var(--bs-gutter-x, .75rem);
-        padding-left: var(--bs-gutter-x, .75rem);
-    }
+        padding-right: var(--bs-gutter-x, .75rem) !important;
+        padding-left: var(--bs-gutter-x, .75rem) !important;
 
+        &.reverse {
+            padding-right: var(--bs-gutter-x, .75rem) !important;
+            padding-left: var(--bs-gutter-x, .75rem) !important;
+        }
+    }
 
 
 
