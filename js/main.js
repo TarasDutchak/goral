@@ -133,9 +133,11 @@ $(document).ready(function () {
     });
 
     // fancybox
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-    });
+    if ($('[data-fancybox]').length > 0) {
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    }
 
     // gallery slider
 
@@ -181,8 +183,6 @@ $(document).ready(function () {
             },
         },
     });
-
-
 
 
 

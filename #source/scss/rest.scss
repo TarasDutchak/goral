@@ -3,7 +3,7 @@
     min-height: 600px;
     position: relative;
     overflow: hidden;
-    padding: 100px;
+    padding: 100px 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,12 +48,13 @@
         margin: 0 auto;
 
         li {
-            max-width: 220px;
+            max-width: 225px;
             position: relative;
             text-align: left;
+            padding-left: 60px;
 
             p {
-                font-size: 16px;
+                font-size: 14px;
                 font-weight: 500;
                 margin: 0;
             }
@@ -70,7 +71,12 @@
                 }
             }
 
-            img {}
+            img {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
 }
@@ -81,4 +87,457 @@
     top: 0;
     width: 100%;
     height: 100%;
+}
+
+.textsect {
+    padding: 125px 0 0 0;
+    background: #fff;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+
+    .textsect__bottbg {
+        width: 100%;
+        margin-top: -40px;
+    }
+
+    .descr {
+        p {
+            font-size: 17px;
+            color: #231F20;
+            margin-bottom: 20px;
+        }
+
+        .worktime {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 17px;
+                color: #231F20;
+                margin-right: 15px;
+
+                span {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    .linkarr {
+        margin-top: 40px;
+    }
+}
+
+.menusect {
+    padding: 105px 0;
+    background: $dark-green;
+}
+
+.menusect__leftblock {
+    padding-right: 65px;
+
+    .imgwrap {
+
+        img {}
+    }
+}
+
+.menusect__centerblock {
+    .imgwrap {
+        margin-bottom: 60px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 17px;
+        margin-bottom: 50px;
+    }
+
+    a {
+        color: #fff;
+        font-size: 16px;
+        position: relative;
+        padding-left: 60px;
+        transition: 0.3s;
+
+        &:hover {
+            color: $gold;
+        }
+
+        img {
+            width: 50px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.menusect__rightblock {
+    padding-left: 80px;
+
+    .texth2 {
+        margin-bottom: 50px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 17px;
+        margin-bottom: 77px;
+    }
+}
+
+.imgwrap.asprat {
+    aspect-ratio: 35 / 43;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+}
+
+.textsect.textsect_bar {
+    background: #FAF9F4;
+    padding-bottom: 140px;
+
+    .descr {
+        padding-top: 100px;
+        padding-left: 65px;
+
+        .texth2 {
+            margin-bottom: 60px;
+        }
+
+        p {
+            max-width: 470px;
+            margin-bottom: 0;
+        }
+    }
+
+    .imgsbox {
+        margin-top: -170px;
+        position: relative;
+        z-index: 1;
+
+        .imgwrapsm {
+            padding-right: 50px;
+            max-width: 450px;
+            display: inline-block;
+            margin-top: 84px;
+        }
+    }
+
+
+}
+
+.bg-white {
+    background: #fff;
+}
+
+@media(max-width:1499.8px) {
+    .hero-centered h1 {
+        font-size: 55px;
+    }
+
+    .hero-centered p {
+        margin-bottom: 40px;
+    }
+
+    .textsect .descr p {
+        margin-bottom: 15px;
+    }
+
+    .textsect .linkarr {
+        margin-top: 20px;
+    }
+
+    .menusect__centerblock .imgwrap {
+        margin-bottom: 40px;
+    }
+
+    .menusect__centerblock p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .menusect__rightblock p {
+        margin-bottom: 40px;
+    }
+
+    .menusect {
+        padding: 90px 0;
+    }
+
+    .textsect {
+        padding-top: 90px;
+    }
+
+    .textsect.textsect_bar {
+        padding-bottom: 90px;
+    }
+
+    .hero-centered p,
+    .textsect .descr p,
+    .textsect .descr .worktime li {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .hero-centered h1 {
+        font-size: 48px;
+    }
+
+    .textsect.textsect_bar .imgsbox .imgwrapsm {
+        max-width: 340px;
+    }
+
+    .textsect.textsect_bar .imgsbox {
+        margin-top: -120px;
+    }
+
+}
+
+@media(max-width:1199.8px) {
+    .menusect {
+        padding: 70px 0;
+    }
+
+    .textsect {
+        padding-top: 70px;
+    }
+
+    .textsect.textsect_bar {
+        padding-bottom: 70px;
+    }
+
+    .hero-centered h1 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .hero-centered p {
+        margin-bottom: 20px;
+    }
+
+    .hero-centered ul li {
+        padding-left: 50px;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .menusect__leftblock {
+        padding-right: 0;
+    }
+
+    .menusect__rightblock {
+        padding-left: 0;
+    }
+
+
+    .menusect__centerblock p {
+        font-size: 15px;
+    }
+
+    .menusect__centerblock a {
+        display: block;
+    }
+
+    .menusect__rightblock .texth2 {
+        margin-bottom: 30px;
+    }
+
+    .menusect__rightblock p {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .textsect.textsect_bar .descr .texth2 {
+        margin-bottom: 40px;
+    }
+
+    .textsect.textsect_bar .descr {
+        padding: 60px 0 0 40px;
+    }
+
+    .textsect.textsect_bar .imgsbox .imgwrapsm {
+        max-width: 70%;
+    }
+}
+
+@media(max-width:991.8px) {
+    .hero-centered ul li img {
+        width: 50px;
+    }
+
+    .textsect .textsect__bottbg {
+        margin-top: 0;
+    }
+
+    .textsect {
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+
+    .menusect__rightblock {
+        .imgwrap {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+
+    .menusect__rightblock .texth2 {
+        margin-bottom: 15px;
+    }
+
+    .menusect__rightblock p {
+        font-size: 17px;
+    }
+
+    .menusect__centerblock {
+        .imgwrap {
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 20px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 50% 50%;
+            }
+        }
+    }
+
+    .textsect.textsect_bar .imgsbox {
+        display: none;
+    }
+
+    .textsect.textsect_bar .descr {
+        padding: 0;
+    }
+
+    .textsect.textsect_bar .descr .texth2 {
+        margin-bottom: 20px;
+    }
+
+    .textsect.textsect_bar .descr {
+        margin-bottom: 30px;
+
+        p {
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+@media(max-width:767.8px) {
+    .menusect {
+        padding: 60px 0;
+    }
+
+    .textsect {
+        padding-top: 60px;
+    }
+
+    .textsect.textsect_bar {
+        padding-bottom: 60px;
+    }
+
+    .hero-centered h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .hero-centered ul {
+        flex-wrap: wrap;
+
+        li {
+            width: 100%;
+            max-width: 50%;
+            flex: 0 0 50%;
+            margin-bottom: 10px;
+            min-height: 50px;
+        }
+    }
+
+    .menusect__centerblock .imgwrap {
+        height: 300px;
+    }
+
+    .menusect__rightblock p {
+        font-size: 15px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .menusect {
+        padding: 50px 0;
+    }
+
+    .textsect {
+        padding-top: 50px;
+    }
+
+    .textsect.textsect_bar {
+        padding-bottom: 50px;
+    }
+
+    .hero-centered h1 {
+        font-size: 32px;
+    }
+
+    .hero-centered p {
+        font-size: 14px;
+    }
+
+    .hero-centered ul li {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .menusect__rightblock .imgwrap {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .menusect__centerblock .imgwrap {
+        height: 200px;
+    }
+
+
+
+
+
+
+    .textsect h2 {
+        margin-bottom: 20px;
+    }
+
 }
