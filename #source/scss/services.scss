@@ -1,0 +1,153 @@
+.hero-list {
+    align-items: center;
+}
+
+.hero-sm p {
+    margin-bottom: 30px;
+}
+
+.service-img {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 3 / 2;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 50%;
+        transition: 1s;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.service-descr {
+    padding-left: 60px;
+
+    .title {
+        font-family: "Tenor Sans", sans-serif;
+        text-transform: uppercase;
+        color: $dark-green;
+        line-height: 110%;
+        font-size: 40px;
+        margin-bottom: 48px;
+
+        span {
+            display: block;
+            padding-left: 70px;
+        }
+    }
+
+    &>p {
+        max-width: 592px;
+        font-size: 17px;
+        margin-bottom: 40px;
+    }
+
+    .bottlinks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.servicebox {
+    margin-bottom: 100px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width:1399.8px) {
+    .service-descr {
+        padding-left: 20px;
+    }
+
+    .service-descr {
+        .title {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        &>p {
+            font-size: 16px;
+        }
+
+
+    }
+}
+
+@media(max-width:991.8px) {
+    .servicebox {
+        .col-lg-6 {
+            &:nth-child(1) {
+                order: 2;
+            }
+
+            &:nth-child(2) {
+                order: 1;
+            }
+        }
+    }
+
+    .service-descr {
+        margin-bottom: 20px;
+    }
+
+    .service-descr {
+        padding-left: 0;
+    }
+
+    .text-section.serv {
+        padding-top: 70px;
+    }
+}
+
+@media(max-width:575.8px) {
+    .service-descr {
+        .title {
+            font-size: 28px;
+            margin-bottom: 20px;
+
+            span {
+                padding-left: 30px;
+            }
+        }
+
+        &>p {
+            margin-bottom: 10px;
+        }
+
+        .linkarr {
+            padding-right: 35px;
+            font-size: 14px;
+        }
+
+        .iclink a {
+            font-size: 15px;
+        }
+    }
+
+    .servicebox {
+        margin-bottom: 80px;
+    }
+}
+
+@media(max-width:360.8px) {
+
+    .iclink {
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-top: 20px;
+    }
+
+}

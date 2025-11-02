@@ -1,4 +1,5 @@
 $(document).ready(function () {
+   
     // Хедер - скрол
     $(window).on('scroll load', function () {
         if ($(this).scrollTop() > 10) {
@@ -183,7 +184,6 @@ $(document).ready(function () {
             },
         },
     });
-
 
 
 
