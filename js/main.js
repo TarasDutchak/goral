@@ -1,5 +1,5 @@
 $(document).ready(function () {
-   
+
     // Хедер - скрол
     $(window).on('scroll load', function () {
         if ($(this).scrollTop() > 10) {
@@ -185,7 +185,11 @@ $(document).ready(function () {
         },
     });
 
-
+    // contacts
+    $('.contact-item.dropdown .title').click(function () {
+        $(this).next('ul').slideToggle();
+        $(this).toggleClass('open');
+    });
 
 
 })
